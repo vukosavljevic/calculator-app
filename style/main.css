@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculator-flex {
+  display: Flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator-flex .calculator {
+  margin-top: 7rem;
+}
+
+.calculator-flex .calculator h1 {
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+
+.calculator-flex .calculator .calculator-ui {
+  width: 1000px;
+  background-color: gray;
+  padding: 6rem;
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__flex .calculator-ui__operacije {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__input {
+  margin-bottom: 5rem;
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__input .input {
+  padding: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  width: 200px;
+  height: 100px;
+}
+/*# sourceMappingURL=main.css.map */
