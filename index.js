@@ -14,8 +14,13 @@ const del = document.querySelector('#delete');
 
 const equal = document.querySelector('#equal')
 
+const zbrajanje = document.querySelector('#zbroj');
+const oduzimanje = document.querySelector('#oduzimanje');
+const multiply = document.querySelector('#multiply');
+
 let result = 0;
 const calculator = function (){
+    
     one.addEventListener('click', function() {
         input.innerHTML +='1';
      })
@@ -49,7 +54,23 @@ const calculator = function (){
      })
      del.addEventListener('click',function() {
          input.innerHTML = '';
-         
      })   
+     zbrajanje.addEventListener('click',function () {
+        input.innerHTML +='+';
+     })
+     oduzimanje.addEventListener('click',function () {
+        input.innerHTML +='-';
+     })
+     division.addEventListener('click',function() {
+        input.innerHTML +='/';
+     })
+     multiply.addEventListener('click',function() {
+        input.innerHTML +='*';
+     })
+     equal.addEventListener('click',function () {
+        const rjesenje = input.innerText;
+        const pravo_rjesenje = eval(rjesenje);
+        input.innerHTML = pravo_rjesenje;
+     })
 }
 calculator();

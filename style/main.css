@@ -47,6 +47,8 @@
   padding: 20px;
   height: 80px;
   width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
   background-color: white;
 }
 
