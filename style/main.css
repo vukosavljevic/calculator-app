@@ -39,8 +39,16 @@
       grid-template-columns: repeat(1, 1fr);
 }
 
+.calculator-flex .calculator .calculator-ui .calculator-ui__flex .calculator-ui__operacije > button {
+  background-color: greenyellow;
+}
+
 .calculator-flex .calculator .calculator-ui .calculator-ui__input {
   margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .calculator-flex .calculator .calculator-ui .calculator-ui__input .input {
@@ -52,11 +60,20 @@
   background-color: white;
 }
 
+.calculator-flex .calculator .calculator-ui .calculator-ui__input button {
+  height: 80px;
+  background-color: red;
+}
+
 .calculator-flex .calculator .calculator-ui .calculator-ui__numbers {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+.calculator-flex .calculator .calculator-ui .calculator-ui__numbers #equal {
+  background-color: #5151ee;
 }
 
 button {
