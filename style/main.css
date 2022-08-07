@@ -5,6 +5,20 @@
           box-sizing: border-box;
 }
 
+html {
+  background-color: black;
+  -webkit-animation-name: body;
+          animation-name: body;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 .calculator-flex {
   display: Flex;
   -webkit-box-pack: center;
@@ -19,10 +33,21 @@
 .calculator-flex .calculator h1 {
   text-align: center;
   margin-bottom: 6.25rem;
+  -webkit-animation-name: text;
+          animation-name: text;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .calculator-flex .calculator .calculator-ui {
   width: 1000px;
+  border-radius: 20px;
   background-color: gray;
   padding: 6rem;
 }
@@ -52,6 +77,7 @@
 }
 
 .calculator-flex .calculator .calculator-ui .calculator-ui__input .input {
+  border-radius: 20px;
   padding: 20px;
   height: 80px;
   width: 100%;
@@ -61,6 +87,7 @@
 }
 
 .calculator-flex .calculator .calculator-ui .calculator-ui__input button {
+  border-radius: 20px;
   height: 80px;
   background-color: red;
 }
@@ -79,5 +106,65 @@
 button {
   width: 200px;
   height: 100px;
+}
+
+@-webkit-keyframes body {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: gray;
+  }
+  80% {
+    background-color: pink;
+  }
+  100% {
+    background-color: mediumaquamarine;
+  }
+}
+
+@keyframes body {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: gray;
+  }
+  80% {
+    background-color: pink;
+  }
+  100% {
+    background-color: mediumaquamarine;
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    color: wheat;
+  }
+  20% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes text {
+  0% {
+    color: wheat;
+  }
+  20% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: blue;
+  }
 }
 /*# sourceMappingURL=main.css.map */
