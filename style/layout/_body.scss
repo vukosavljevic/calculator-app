@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background-color: black;
-    animation-name: body;
-    animation-duration:10s ;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    background-color: rgb(116, 105, 105);
 }
 .calculator-flex{
     display:Flex;
@@ -27,7 +22,7 @@ html {
        }
     .calculator-ui{
         width:1000px;
-        border-radius: 20px;
+        border-radius: 50px;
         background-color:gray;
         padding:6rem;
         .calculator-ui__flex{
@@ -72,20 +67,6 @@ html {
 button{
     width:200px;
     height:100px;
-}
-@keyframes body {
-    0%{
-        background-color: red;
-    }
-    20%{
-        background-color: gray;
-    }
-    80%{
-        background-color: pink;
-    }
-    100%{
-        background-color: mediumaquamarine;
-    }
 }
 @keyframes text {
     0%{
