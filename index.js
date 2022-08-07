@@ -11,6 +11,7 @@ const eight = document.querySelector('#eight');
 const nine = document.querySelector('#nine');
 const zero = document.querySelector('#zero');
 const del = document.querySelector('#delete');
+const comma = document.querySelector('#comma');
 
 const equal = document.querySelector('#equal')
 
@@ -66,6 +67,9 @@ const calculator = function (){
      })
      multiply.addEventListener('click',function() {
         input.innerHTML +='*';
+     })
+     comma.addEventListener('click',function() {
+        input.innerHTML +='.';
      })
      equal.addEventListener('click',function () {
         const rjesenje = input.innerText;
